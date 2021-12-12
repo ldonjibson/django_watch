@@ -1,0 +1,49 @@
+Metadata-Version: 1.1
+Name: django_watch_bugging
+Version: 0.1
+Summary: Django Watch Bugging is used to monitor the VBP application usages.
+Home-page: https://otextcity.com/9-blog/3-vtu-business-selling-airtime-data-gotv-dstv-startimes-electricity-bills.html
+Author: Olayanju A. Ajibola
+Author-email: vtubusinessportal@gmail.com
+License: MIT License
+Description: =====
+        Django Watch Bugging
+        =====
+        
+        Django Watch Bugging is used to monitor the VBP application usage
+        
+        Detailed documentation is in the "docs" directory.
+        
+        Quick start
+        -----------
+        1. pip install requests 
+          pip install django_watch_bugging
+        
+        2a. Add "django_watch_bugging" to your INSTALLED_APPS setting like this::
+        
+            INSTALLED_APPS = [
+                ...
+                'django_watch_bugging',
+            ]
+        2b. Add "django_watch_bugging.middleware.CheckLiValueMiddleware" to your MIDDLEWARE_CLASSES
+        
+        3. Include the polls URLconf in your project urls.py like this::
+        
+            path('users/django_watch/', include('django_watch_bugging.urls')),
+        
+        4. Run ``python manage.py migrate`` to create the django_watch_bugging models.
+        
+        5. Start the development server and visit http://127.0.0.1:8000/admin/
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
